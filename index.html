@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: fixed;
+            width: 99%;
+            height: 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .nav-links a:hover {
+            background-color: #0056b3;
+        }
+        .banner {
+            background-image: url("../static/voting.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            
+            height: 1000px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+            /* opacity: 0.4; */
+         } 
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Online Voting System</div>
+        <div class="nav-links">
+            <a href="{{ url_for('login') }}">User</a>
+            <a href="{{ url_for('admin_login') }}">Admin</a>
+        </div>
+    </div>
+    <div class="banner">
+        ONLINE VOTING SYSTEM
+    </div>
+    
+</body>
+</html>
